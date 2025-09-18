@@ -1,0 +1,1100 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Mapas &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Mapas';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Welcome to your Jupyter Book
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Mapas</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FMapas.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Mapas.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Mapas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="mapas">
+<h1>Mapas<a class="headerlink" href="#mapas" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 1. Folium - La más popular y fácil</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">folium</span>
+
+<span class="c1"># Mapa básico </span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">4.6097</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.0817</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># Bogotá</span>
+<span class="n">m</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s1">&#39;mapa.html&#39;</span><span class="p">)</span>
+<span class="n">m</span> <span class="c1"># En jupyter se muestra directamente</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_a88db68f89723e2a139ffa57ebbbbf21 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_a88db68f89723e2a139ffa57ebbbbf21&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_a88db68f89723e2a139ffa57ebbbbf21 = L.map(
+                &quot;map_a88db68f89723e2a139ffa57ebbbbf21&quot;,
+                {
+                    center: [4.6097, -74.0817],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 10,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_6cba5e3b3e7638399dab08c0bdd557ed = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_6cba5e3b3e7638399dab08c0bdd557ed.addTo(map_a88db68f89723e2a139ffa57ebbbbf21);
+        
+    
+            tile_layer_6cba5e3b3e7638399dab08c0bdd557ed.addTo(map_a88db68f89723e2a139ffa57ebbbbf21);
+        
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># 2. Plotly - Mapas interactivos avanzados </span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.graph_objects</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">go</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">plotly.express</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">px</span>
+
+<span class="c1"># Mapa con marcadores </span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">go</span><span class="o">.</span><span class="n">Figure</span><span class="p">(</span><span class="n">go</span><span class="o">.</span><span class="n">Scattermapbox</span><span class="p">(</span>
+      <span class="n">lat</span><span class="o">=</span><span class="p">[</span><span class="mf">4.6097</span><span class="p">],</span>
+      <span class="n">lon</span><span class="o">=</span><span class="p">[</span><span class="o">-</span><span class="mf">74.0817</span><span class="p">],</span>
+      <span class="n">mode</span><span class="o">=</span><span class="s1">&#39;markers&#39;</span><span class="p">,</span>
+      <span class="n">marker</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">size</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">),</span>
+      <span class="n">text</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Bogotá&#39;</span><span class="p">],</span>
+<span class="p">))</span>
+
+<span class="n">fig</span><span class="o">.</span><span class="n">update_layout</span><span class="p">(</span>
+    <span class="n">mapbox_style</span><span class="o">=</span><span class="s2">&quot;open-street-map&quot;</span><span class="p">,</span>
+     <span class="n">mapbox</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">center</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">lat</span><span class="o">=</span><span class="mf">4.6097</span><span class="p">,</span> <span class="n">lon</span><span class="o">=-</span><span class="mf">74.0817</span><span class="p">),</span> <span class="n">zoom</span><span class="o">=</span><span class="mi">10</span><span class="p">),</span>
+     <span class="n">margin</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;r&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;t&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;l&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="mi">0</span><span class="p">}</span>    
+<span class="p">)</span>
+<span class="n">fig</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\aprendiz\AppData\Local\Temp\ipykernel_10924\876235625.py:7: DeprecationWarning: *scattermapbox* is deprecated! Use *scattermap* instead. Learn more at: https://plotly.com/python/mapbox-to-maplibre/
+  fig = go.Figure(go.Scattermapbox(
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">## 2. Folium</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">folium</span>
+
+<span class="c1"># Mapa básico de Colombia</span>
+<span class="n">m</span> <span class="o">=</span> <span class="n">folium</span><span class="o">.</span><span class="n">Map</span><span class="p">(</span><span class="n">location</span><span class="o">=</span><span class="p">[</span><span class="mf">4.6</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.08</span><span class="p">],</span> <span class="n">zoom_start</span><span class="o">=</span><span class="mi">6</span><span class="p">)</span>
+
+<span class="c1"># Agregar marcadores de ciudades principales</span>
+<span class="n">ciudades</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;Bogotá&#39;</span> <span class="p">:</span> <span class="p">[</span><span class="mf">4.6097</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.0817</span><span class="p">],</span>
+    <span class="s1">&#39;Medellin&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">6.2442</span><span class="p">,</span> <span class="o">-</span><span class="mf">75.5812</span><span class="p">],</span>
+    <span class="s1">&#39;Cali&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">3.4516</span><span class="p">,</span> <span class="o">-</span><span class="mf">76.5320</span><span class="p">],</span>
+    <span class="s1">&#39;Barranquilla&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">10.9685</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.7813</span><span class="p">],</span>
+    <span class="s1">&#39;Cartagena&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">10.3910</span><span class="p">,</span> <span class="o">-</span><span class="mf">75.4794</span><span class="p">],</span>
+    <span class="s1">&#39;Santa marta&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">11.23855</span><span class="p">,</span> <span class="o">-</span><span class="mf">74.19427</span><span class="p">],</span>
+    <span class="s1">&#39;Bucaramanga&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mf">7.125</span><span class="p">,</span><span class="o">-</span><span class="mf">73.11895</span><span class="p">]</span>
+<span class="p">}</span>
+
+<span class="k">for</span> <span class="n">ciudad</span><span class="p">,</span> <span class="n">coords</span> <span class="ow">in</span> <span class="n">ciudades</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="n">folium</span><span class="o">.</span><span class="n">Marker</span><span class="p">(</span>
+        <span class="n">coords</span><span class="p">,</span>
+        <span class="n">popup</span><span class="o">=</span><span class="n">ciudad</span><span class="p">,</span>
+        <span class="n">tooltip</span><span class="o">=</span><span class="n">ciudad</span><span class="p">,</span>
+        <span class="n">icon</span><span class="o">=</span><span class="n">folium</span><span class="o">.</span><span class="n">Icon</span><span class="p">(</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="n">icon</span><span class="o">=</span><span class="s1">&#39;info-sign&#39;</span><span class="p">)</span>
+    <span class="p">)</span><span class="o">.</span><span class="n">add_to</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+
+<span class="n">m</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_7dee6ab4b25cc462c6b5dcda31a63e75 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+
+            &lt;style&gt;html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            &lt;/style&gt;
+
+            &lt;style&gt;#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            &lt;/style&gt;
+
+            &lt;script&gt;
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            &lt;/script&gt;
+
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_7dee6ab4b25cc462c6b5dcda31a63e75&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_7dee6ab4b25cc462c6b5dcda31a63e75 = L.map(
+                &quot;map_7dee6ab4b25cc462c6b5dcda31a63e75&quot;,
+                {
+                    center: [4.6, -74.08],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  &quot;zoom&quot;: 6,
+  &quot;zoomControl&quot;: true,
+  &quot;preferCanvas&quot;: false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_55c6ba36c3965ead3d40db61209a6c43 = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {
+  &quot;minZoom&quot;: 0,
+  &quot;maxZoom&quot;: 19,
+  &quot;maxNativeZoom&quot;: 19,
+  &quot;noWrap&quot;: false,
+  &quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;,
+  &quot;subdomains&quot;: &quot;abc&quot;,
+  &quot;detectRetina&quot;: false,
+  &quot;tms&quot;: false,
+  &quot;opacity&quot;: 1,
+}
+
+            );
+        
+    
+            tile_layer_55c6ba36c3965ead3d40db61209a6c43.addTo(map_7dee6ab4b25cc462c6b5dcda31a63e75);
+        
+    
+            var marker_e28b89bbb3af86c3a4cf96506bca14b1 = L.marker(
+                [4.6097, -74.0817],
+                {
+}
+            ).addTo(map_7dee6ab4b25cc462c6b5dcda31a63e75);
+        
+    
+            var icon_9244315d48a9f10648c8e865e59a3f82 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_c1bae95464adda013da57ca96ce975e3 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_eda4b96da275d984d8939851530233eb = $(`&lt;div id=&quot;html_eda4b96da275d984d8939851530233eb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Bogotá&lt;/div&gt;`)[0];
+                popup_c1bae95464adda013da57ca96ce975e3.setContent(html_eda4b96da275d984d8939851530233eb);
+            
+        
+
+        marker_e28b89bbb3af86c3a4cf96506bca14b1.bindPopup(popup_c1bae95464adda013da57ca96ce975e3)
+        ;
+
+        
+    
+    
+            marker_e28b89bbb3af86c3a4cf96506bca14b1.bindTooltip(
+                `&lt;div&gt;
+                     Bogotá
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_e28b89bbb3af86c3a4cf96506bca14b1.setIcon(icon_9244315d48a9f10648c8e865e59a3f82);
+            
+    
+            var marker_ad357006674732128d0661a8e33fb40d = L.marker(
+                [6.2442, -75.5812],
+                {
+}
+            ).addTo(map_7dee6ab4b25cc462c6b5dcda31a63e75);
+        
+    
+            var icon_16964c7befeb094e9fe62127fa6bc2e7 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_0596b1b36796168f450cb171ae48272c = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_dc48dd1faeecd828f64dc7abd84f4546 = $(`&lt;div id=&quot;html_dc48dd1faeecd828f64dc7abd84f4546&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Medellin&lt;/div&gt;`)[0];
+                popup_0596b1b36796168f450cb171ae48272c.setContent(html_dc48dd1faeecd828f64dc7abd84f4546);
+            
+        
+
+        marker_ad357006674732128d0661a8e33fb40d.bindPopup(popup_0596b1b36796168f450cb171ae48272c)
+        ;
+
+        
+    
+    
+            marker_ad357006674732128d0661a8e33fb40d.bindTooltip(
+                `&lt;div&gt;
+                     Medellin
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_ad357006674732128d0661a8e33fb40d.setIcon(icon_16964c7befeb094e9fe62127fa6bc2e7);
+            
+    
+            var marker_89d37a484b0165cf88d321516fae2d92 = L.marker(
+                [3.4516, -76.532],
+                {
+}
+            ).addTo(map_7dee6ab4b25cc462c6b5dcda31a63e75);
+        
+    
+            var icon_95c0e548ada7e2dda52081a20690062d = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_18e87f28a1d7844019b056d8c781f136 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_75a323dc3e7144f8e1339663df08493e = $(`&lt;div id=&quot;html_75a323dc3e7144f8e1339663df08493e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Cali&lt;/div&gt;`)[0];
+                popup_18e87f28a1d7844019b056d8c781f136.setContent(html_75a323dc3e7144f8e1339663df08493e);
+            
+        
+
+        marker_89d37a484b0165cf88d321516fae2d92.bindPopup(popup_18e87f28a1d7844019b056d8c781f136)
+        ;
+
+        
+    
+    
+            marker_89d37a484b0165cf88d321516fae2d92.bindTooltip(
+                `&lt;div&gt;
+                     Cali
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_89d37a484b0165cf88d321516fae2d92.setIcon(icon_95c0e548ada7e2dda52081a20690062d);
+            
+    
+            var marker_10caa968f8600b870f7c8325170183bd = L.marker(
+                [10.9685, -74.7813],
+                {
+}
+            ).addTo(map_7dee6ab4b25cc462c6b5dcda31a63e75);
+        
+    
+            var icon_7c360fad8e8065d6899e879ed8611758 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_34e2e2557004c87160a75f2aed3fffcd = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_9f0dee66dc94ca5876f8c359aaf3843e = $(`&lt;div id=&quot;html_9f0dee66dc94ca5876f8c359aaf3843e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Barranquilla&lt;/div&gt;`)[0];
+                popup_34e2e2557004c87160a75f2aed3fffcd.setContent(html_9f0dee66dc94ca5876f8c359aaf3843e);
+            
+        
+
+        marker_10caa968f8600b870f7c8325170183bd.bindPopup(popup_34e2e2557004c87160a75f2aed3fffcd)
+        ;
+
+        
+    
+    
+            marker_10caa968f8600b870f7c8325170183bd.bindTooltip(
+                `&lt;div&gt;
+                     Barranquilla
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_10caa968f8600b870f7c8325170183bd.setIcon(icon_7c360fad8e8065d6899e879ed8611758);
+            
+    
+            var marker_0c613d7a88c8f1f0271957a15f69a336 = L.marker(
+                [10.391, -75.4794],
+                {
+}
+            ).addTo(map_7dee6ab4b25cc462c6b5dcda31a63e75);
+        
+    
+            var icon_dd55d2e0607c347d5f4054ccf81a5cb2 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_9c0b9c746f8bddf6b488980eb6412162 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_4718d03026bdd170c4a62fa38385f448 = $(`&lt;div id=&quot;html_4718d03026bdd170c4a62fa38385f448&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Cartagena&lt;/div&gt;`)[0];
+                popup_9c0b9c746f8bddf6b488980eb6412162.setContent(html_4718d03026bdd170c4a62fa38385f448);
+            
+        
+
+        marker_0c613d7a88c8f1f0271957a15f69a336.bindPopup(popup_9c0b9c746f8bddf6b488980eb6412162)
+        ;
+
+        
+    
+    
+            marker_0c613d7a88c8f1f0271957a15f69a336.bindTooltip(
+                `&lt;div&gt;
+                     Cartagena
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_0c613d7a88c8f1f0271957a15f69a336.setIcon(icon_dd55d2e0607c347d5f4054ccf81a5cb2);
+            
+    
+            var marker_2ef4cfd8f8de6825a427714bd65dd0c0 = L.marker(
+                [11.23855, -74.19427],
+                {
+}
+            ).addTo(map_7dee6ab4b25cc462c6b5dcda31a63e75);
+        
+    
+            var icon_d2077e55ca05b017afff1aa279a6e2f5 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_7843137e9004f3ea9cf0d692767cf301 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_1c676836e60c4c36ddf821426c052d14 = $(`&lt;div id=&quot;html_1c676836e60c4c36ddf821426c052d14&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Santa marta&lt;/div&gt;`)[0];
+                popup_7843137e9004f3ea9cf0d692767cf301.setContent(html_1c676836e60c4c36ddf821426c052d14);
+            
+        
+
+        marker_2ef4cfd8f8de6825a427714bd65dd0c0.bindPopup(popup_7843137e9004f3ea9cf0d692767cf301)
+        ;
+
+        
+    
+    
+            marker_2ef4cfd8f8de6825a427714bd65dd0c0.bindTooltip(
+                `&lt;div&gt;
+                     Santa marta
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_2ef4cfd8f8de6825a427714bd65dd0c0.setIcon(icon_d2077e55ca05b017afff1aa279a6e2f5);
+            
+    
+            var marker_89c19f662ab5d319543613e9b6442912 = L.marker(
+                [7.125, -73.11895],
+                {
+}
+            ).addTo(map_7dee6ab4b25cc462c6b5dcda31a63e75);
+        
+    
+            var icon_3490bc9e2625a6c78f10f3ef8e5cb073 = L.AwesomeMarkers.icon(
+                {
+  &quot;markerColor&quot;: &quot;red&quot;,
+  &quot;iconColor&quot;: &quot;white&quot;,
+  &quot;icon&quot;: &quot;info-sign&quot;,
+  &quot;prefix&quot;: &quot;glyphicon&quot;,
+  &quot;extraClasses&quot;: &quot;fa-rotate-0&quot;,
+}
+            );
+        
+    
+        var popup_613536e6e19a848bf0031a51bcd0a733 = L.popup({
+  &quot;maxWidth&quot;: &quot;100%&quot;,
+});
+
+        
+            
+                var html_38620c47a77e2a39e3c3c438d10c0203 = $(`&lt;div id=&quot;html_38620c47a77e2a39e3c3c438d10c0203&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;Bucaramanga&lt;/div&gt;`)[0];
+                popup_613536e6e19a848bf0031a51bcd0a733.setContent(html_38620c47a77e2a39e3c3c438d10c0203);
+            
+        
+
+        marker_89c19f662ab5d319543613e9b6442912.bindPopup(popup_613536e6e19a848bf0031a51bcd0a733)
+        ;
+
+        
+    
+    
+            marker_89c19f662ab5d319543613e9b6442912.bindTooltip(
+                `&lt;div&gt;
+                     Bucaramanga
+                 &lt;/div&gt;`,
+                {
+  &quot;sticky&quot;: true,
+}
+            );
+        
+    
+                marker_89c19f662ab5d319543613e9b6442912.setIcon(icon_3490bc9e2625a6c78f10f3ef8e5cb073);
+            
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div></div></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Karla Reyes
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2025, Karla Reyes.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
